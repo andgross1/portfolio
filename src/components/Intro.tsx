@@ -4,13 +4,9 @@ const Intro = () => {
   return (
     <>
       <main className="relative z-auto h-screen w-full bg-white/50">
-        <div
-          className="pointer-events-none absolute inset-0 -z-10 size-full bg-cover select-none"
-          style={{
-            backgroundImage:
-              'url("https://aasrahospitality.purnashrestha.com.np/assets/whitegradient-BOMfrnNs.avif")',
-          }}
-        ></div>
+        <h1 className="text-3xl font-bold text-blue-500">
+          Tailwind funcionando 🚀
+        </h1>
         <div className="container flex size-full max-w-3xl flex-col items-center justify-center gap-4 text-center">
           <Link to="https://www.purnashrestha.com.np/" target="_blank">
             <img
