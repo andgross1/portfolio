@@ -22,6 +22,9 @@ module.exports = {
           '2xl': '1600px',
         },
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      }
     },
   },
   plugins: [],

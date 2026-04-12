@@ -1,25 +1,19 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from 'react-router-dom';
-import Home from './pages/Home';
-import RouterToTop from './utils/RouterToTop';
+import Header from "./components/Layout/Header";
 
-const App: React.FC = () => {
+function App() {
   return (
     <>
-      <Router>
-        <RouterToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-      </Router>
+      <Header />
+
+      {/* Espaço só pra testar scroll */}
+      <main className="pt-16">
+        <div className="h-[2000px] bg-gray-100">
+          Conteúdo
+        </div>
+      </main>
+      <div className="h-[2000px] bg-gray-100 pt-20"></div>
     </>
   );
-};
+}
 
 export default App;
