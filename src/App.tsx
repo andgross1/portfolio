@@ -1,17 +1,13 @@
-import Header from "./components/Layout/Header";
+import Header from "./components/Header";
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <>
       <Header />
-
-      {/* Espaço só pra testar scroll */}
-      <main className="pt-16">
-        <div className="h-[2000px] bg-gray-100">
-          Conteúdo
-        </div>
+       <main className="pt-16">
+        <Hero />
       </main>
-      <div className="h-[2000px] bg-gray-100 pt-20"></div>
     </>
   );
 }

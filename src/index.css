@@ -14,3 +14,41 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* entra de baixo */
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(6px);
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* sai pra cima */
+@keyframes slide-out {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+    filter: blur(6px);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.35s ease forwards;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.35s ease forwards;
+}
