@@ -52,3 +52,6 @@ a {
 .animate-slide-out {
   animation: slide-out 0.35s ease forwards;
 }
+html {
+  scroll-behavior: smooth;
+}
