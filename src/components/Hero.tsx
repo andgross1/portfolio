@@ -21,8 +21,8 @@ const Hero = () => {
     }, [index]);
 
     return (
-        <section className="w-full h-screen flex items-center justify-center bg-white">
-            <div className="text-center max-w-3xl px-6">
+        <section className="min-h-screen flex items-center py-24">
+            <div className="mx-auto text-center max-w-3xl px-6">
 
                 <h1 className="text-4xl md:text-6xl font-semibold mb-4">
                     André Gross

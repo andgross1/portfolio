@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="sobre" className="w-full py-32 bg-white">
+    <section className="min-h-screen flex items-center py-24">
       <div className="w-full flex">
 
         {/* Espaço vazio à esquerda */}
@@ -40,6 +40,7 @@ const About = () => {
         <div className="hidden md:block md:w-[30%]" />
 
       </div>
+      <div className="h-32"></div>
     </section>
   );
 };
